@@ -1,0 +1,17 @@
+Index: src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring.datasource.url=${JDBC_DATABASE_URL}\nspring.datasource.username=${JDBC_DATABASE_USERNAME}\nspring.datasource.password=${JDBC_DATABASE_PASSWORD}\nspring.jpa.show-sql=false\nspring.jpa.generate-ddl=true\n#Lần đầu deploy lên heroku thì để là create, lầu sau sửa thành update\nspring.jpa.hibernate.ddl-auto=create\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/application.properties	(date 1553145842000)
++++ src/main/resources/application.properties	(date 1553145872000)
+@@ -1,7 +1,0 @@
+-spring.datasource.url=${JDBC_DATABASE_URL}
+-spring.datasource.username=${JDBC_DATABASE_USERNAME}
+-spring.datasource.password=${JDBC_DATABASE_PASSWORD}
+-spring.jpa.show-sql=false
+-spring.jpa.generate-ddl=true
+-#Lần đầu deploy lên heroku thì để là create, lầu sau sửa thành update
+-spring.jpa.hibernate.ddl-auto=create
